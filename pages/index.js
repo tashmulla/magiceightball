@@ -1,25 +1,24 @@
 // import Layout from '../components/MyLayout.js'
 import Header from '../components/Header.js'
 import Link from 'next/link'
+import { Component } from "react";
 
-export default () => (
-    <div>
-    <Header />
-      <h1>Magic 8 Ball</h1>
-      <style jsx>{`
-        h1 {
-          font-family:"Arial";
-          font-size:50px;
-        }`}
-      </style>
-    </div>
-)
+class HomePage extends Component {
+  render() {
+    return (
+      <main>
+        <Header />
+        <h1 style={{ fontFamily:"Arial", fontSize:"50px" }}>Magic 8 Ball</h1>
 
-export const userInput = (
-  <div>
-    <form className="question-input">
-      <input type="text" ref="question" placeholder="Ask your question..."/>
-      <input type="submit" value="Shake!"/>
-    </form>
-  </div>
-)
+        <form className="question-input" method="POST" action="/">
+          <input type="text" ref="inputquestion" placeholder="Ask your question..."style={{ width: "300px", fontSize:18 }}/>
+          <button id="submitquestion" style={{ width: "100px", fontSize:17 }}>Shake Me!</button>
+        </form>
+
+        <p style={{ fontFamily:'Arial' }} id="questionresponse">Your answer...</p>
+      </main>
+    )
+  }
+}
+
+export default HomePage;
