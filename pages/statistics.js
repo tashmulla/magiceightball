@@ -9,14 +9,13 @@ class StatsPage extends Component {
       <main>
         <Header />
           <h1>Game Statistics</h1>
-
           <style jsx>{`
             h1 {
               font-family:"Arial";
               font-size:50px;
             }`}
           </style>
-          
+
       </main>
     )
   }
