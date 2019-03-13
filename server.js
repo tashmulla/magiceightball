@@ -50,7 +50,7 @@ app.prepare()
       "Very doubtful."
     ]
     const number = Math.floor(Math.random()*20);
-    res.status(201).send(answers[number]);
+    res.status(200).send(answers[number]);
   })
 
 })

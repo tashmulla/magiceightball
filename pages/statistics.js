@@ -4,6 +4,14 @@ import Link from 'next/link'
 import { Component } from "react";
 
 class StatsPage extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
   render() {
     return (
       <main>
@@ -15,10 +23,18 @@ class StatsPage extends Component {
               font-size:50px;
             }`}
           </style>
-
       </main>
     )
   }
+
+  /*const Stats = props => {
+  return (
+    <div>
+      <p>Count: {props.count}</p>
+    </div>
+    );
+  };*/
+
 }
 
 export default StatsPage;
