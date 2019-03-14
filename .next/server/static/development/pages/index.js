@@ -1404,18 +1404,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Header.js */ "./components/Header.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Header.js */ "./components/Header.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! popmotion */ "popmotion");
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/TextField */ "@material-ui/core/TextField");
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13__);
-
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var react_shapes__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-shapes */ "react-shapes");
+/* harmony import */ var react_shapes__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_shapes__WEBPACK_IMPORTED_MODULE_15__);
 
 
 
@@ -1425,6 +1428,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // import Layout from '../components/MyLayout.js'
+
+
 
 
 
@@ -1485,32 +1490,43 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Header_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_Header_js__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+        style: {
+          paddingTop: "150px"
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14___default.a, {
+        variant: "title",
+        color: "inherit"
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         style: {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center'
         }
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("h1", {
         style: {
           fontFamily: "Arial",
           fontSize: "50px"
         }
-      }, "Magic 8 Ball")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, "Magic 8 Ball")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         style: {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center'
         }
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("form", {
         className: "question-input",
         onSubmit: this.handleSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12___default.a, {
         id: "inputquestion",
         autoComplete: "off",
         placeholder: "Ask your question...",
-        margin: "normal"
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        margin: "normal",
+        style: {
+          width: "200px",
+          paddingRight: "10px"
+        }
+      }), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_13___default.a, {
         variant: "contained",
         type: "submit",
         color: "primary",
@@ -1520,18 +1536,18 @@ function (_Component) {
           width: "100px",
           fontSize: 17
         }
-      }, "Shake Me!"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, "Shake Me!"))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
         style: {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center'
         }
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, "Answer: ", this.state.response), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, "Question count: ", this.state.count)));
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", null, "Magic 8 Ball says... ", this.state.response)))));
     }
   }]);
 
   return App;
-}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_10__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
@@ -1831,6 +1847,17 @@ module.exports = require("react-dom");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-shapes":
+/*!*******************************!*\
+  !*** external "react-shapes" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-shapes");
 
 /***/ }),
 

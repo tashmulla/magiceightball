@@ -10,6 +10,21 @@ class StatsPage extends Component {
     this.state = {
       count: 0
     };
+    this.incrementCounter = this.incrementCounter.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      count: parseInt(localStorage.getItem("count")) || 0
+    });
+  }
+
+  incrementCounter() {
+    const count = this.state.count + 1;
+    localStorage.setItem("count", count);
+    this.setState({
+      count: count
+    });
   }
 
   render() {
@@ -17,6 +32,9 @@ class StatsPage extends Component {
       <main>
         <Header />
           <h1>Game Statistics</h1>
+          <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+            <p>Question count: {this.state.count}</p>
+          </div>
           <style jsx>{`
             h1 {
               font-family:"Arial";
