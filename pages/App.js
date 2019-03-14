@@ -11,9 +11,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
+      response: undefined
     };
-    this.answer = 'Testing';
     this.incrementCounter = this.incrementCounter.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -32,13 +32,11 @@ class App extends Component {
     });
   }
 
-  handleSubmit(event) {
-    console.log('RECEIVED.');
+  handleSubmit = (event) => {
     event.preventDefault();
-    fetch('/', {
-      method: 'POST'
-      }
-    )
+    fetch('/', { method: 'POST' })
+    .then(response => response.text())
+    .then(textValue => this.setState({ response: textValue }));
   }
 
   render() {
@@ -50,7 +48,7 @@ class App extends Component {
             </div>
 
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-              <form className="question-input" method="POST" action="/">
+              <form className="question-input" onSubmit={this.handleSubmit}>
                 <TextField
                   id="inputquestion"
                   autoComplete="off"
@@ -69,7 +67,8 @@ class App extends Component {
             </div>
 
             <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-              <p>Count: {this.state.count}</p>
+              <p>Answer: {this.state.response}</p>
+              <p>Question count: {this.state.count}</p>
             </div>
         </main>
     )

@@ -1,6 +1,5 @@
 const express = require('express')
 const next = require('next')
-
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({dev})
 const handle = app.getRequestHandler()
@@ -26,7 +25,6 @@ app.prepare()
 
   /* Return random answer after question is submitted.*/
   server.post('/', (req,res) => {
-    console.log("Received request.")
     const answers = [
       "It is certain.",
       "It is decidedly so.",
@@ -47,10 +45,15 @@ app.prepare()
       "My reply is no.",
       "My sources say no.",
       "Outlook not so good.",
-      "Very doubtful."
+      "Very doubtful.",
+      "Computer says no."
     ]
-    const number = Math.floor(Math.random()*20);
+    const number = Math.floor(Math.random()*21);
+    console.log("Raw answer: ");
+    console.log(answers[number]);
     res.status(200).send(answers[number]);
+    console.log("Response: ");
+    console.log(res);
   })
 
 })
