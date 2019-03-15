@@ -2,29 +2,18 @@
 import Header from '../components/Header.js'
 import Link from 'next/link'
 import React, { Component } from "react";
-import { spring } from 'popmotion';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Circle } from 'react-shapes';
-const moment = require('moment');
-import LinearProgress from '@material-ui/core/LinearProgress';
-import classNames from 'classnames';
-import { withStyles } from '@material-ui/core/styles';
-
-const styles = {
-    textField: {
-    fontSize: 500,
-    fontColor:'white' //works!
- }
-}
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      response: undefined
+      response: undefined,
+      showProgress: false
     };
     this.incrementCounter = this.incrementCounter.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -46,11 +35,17 @@ class App extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    fetch('/', { method: 'POST' })
-    .then(response => response.text())
-    .then(textValue => this.setState({ response: textValue }))
-    .then(time => this.setState({ time: Date() }))
-    .then(console.log(moment().toDate()));
+    const x = inputquestion.value;
+    if (x == "") {
+      alert("Enter a question first!");
+    }
+    else {
+      fetch('/', { method: 'POST' })
+      .then(response => response.text())
+      .then(textValue => this.setState({ response: textValue }))
+      .then(this.setState({showProgress : false }))
+      .then(this.setState({showAnswer : true}));
+    }
   }
 
   render() {
@@ -93,8 +88,11 @@ class App extends Component {
                       </Button>
                     </form>
                   </div>
+                  <div>
+                    { this.state.showProgress ? <CircularProgress color="primary" /> : null }
+                  </div>
                   <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', color:"white", fontWeight:'bold'}}>
-                    <p>{this.state.response}</p>
+                    {this.state.showAnswer ? <p>{this.state.response}</p> : null }
                   </div>
                 </Typography>
               </div>
@@ -110,7 +108,6 @@ class App extends Component {
               }`}
             </style>
           </body>
-
     )
   }
 }

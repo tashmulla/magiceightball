@@ -1,8 +1,6 @@
-import Header from '../components/Header.js'
-import Link from 'next/link'
+import Header from '../components/Header.js';
+import Link from 'next/link';
 import { Component } from "react";
-const moment = require('moment');
-import { Chart } from "react-charts";
 import Typography from '@material-ui/core/Typography';
 
 class StatsPage extends Component {
@@ -10,8 +8,7 @@ class StatsPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
-      time: undefined
+      count: 0
     };
     this.incrementCounter = this.incrementCounter.bind(this);
   }
