@@ -52,8 +52,6 @@ app.prepare()
     console.log("Raw answer: ");
     console.log(answers[number]);
     res.status(200).send(answers[number]);
-    console.log("Response: ");
-    console.log(res);
   })
 
 })

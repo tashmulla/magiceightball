@@ -25,6 +25,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/colors */ "./node_modules/@material-ui/core/colors/index.js");
+/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -40,21 +43,22 @@ var linkStyle = {
 
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    position: "static"
+    position: "static",
+    style: {
+      background: "#685fa8"
+    }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4___default.a, {
     variant: "title",
     color: "inherit"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    variant: "contained",
-    color: "secondary",
+    color: "inherit",
     style: linkStyle
   }, "Play Magic 8 Ball")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/statistics"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    variant: "contained",
-    color: "secondary",
+    color: "inherit",
     style: linkStyle
   }, "Game Statistics"))))));
 };
@@ -3621,6 +3625,146 @@ var _Typography = _interopRequireDefault(__webpack_require__(/*! ./Typography */
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/colors/amber.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/amber.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var amber = {
+  50: '#fff8e1',
+  100: '#ffecb3',
+  200: '#ffe082',
+  300: '#ffd54f',
+  400: '#ffca28',
+  500: '#ffc107',
+  600: '#ffb300',
+  700: '#ffa000',
+  800: '#ff8f00',
+  900: '#ff6f00',
+  A100: '#ffe57f',
+  A200: '#ffd740',
+  A400: '#ffc400',
+  A700: '#ffab00'
+};
+var _default = amber;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/blue.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/blue.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var blue = {
+  50: '#e3f2fd',
+  100: '#bbdefb',
+  200: '#90caf9',
+  300: '#64b5f6',
+  400: '#42a5f5',
+  500: '#2196f3',
+  600: '#1e88e5',
+  700: '#1976d2',
+  800: '#1565c0',
+  900: '#0d47a1',
+  A100: '#82b1ff',
+  A200: '#448aff',
+  A400: '#2979ff',
+  A700: '#2962ff'
+};
+var _default = blue;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/blueGrey.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/blueGrey.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var blueGrey = {
+  50: '#eceff1',
+  100: '#cfd8dc',
+  200: '#b0bec5',
+  300: '#90a4ae',
+  400: '#78909c',
+  500: '#607d8b',
+  600: '#546e7a',
+  700: '#455a64',
+  800: '#37474f',
+  900: '#263238',
+  A100: '#cfd8dc',
+  A200: '#b0bec5',
+  A400: '#78909c',
+  A700: '#455a64'
+};
+var _default = blueGrey;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/brown.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/brown.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var brown = {
+  50: '#efebe9',
+  100: '#d7ccc8',
+  200: '#bcaaa4',
+  300: '#a1887f',
+  400: '#8d6e63',
+  500: '#795548',
+  600: '#6d4c41',
+  700: '#5d4037',
+  800: '#4e342e',
+  900: '#3e2723',
+  A100: '#d7ccc8',
+  A200: '#bcaaa4',
+  A400: '#8d6e63',
+  A700: '#5d4037'
+};
+var _default = brown;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/colors/common.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/core/colors/common.js ***!
@@ -3640,6 +3784,146 @@ var common = {
   white: '#fff'
 };
 var _default = common;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/cyan.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/cyan.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var cyan = {
+  50: '#e0f7fa',
+  100: '#b2ebf2',
+  200: '#80deea',
+  300: '#4dd0e1',
+  400: '#26c6da',
+  500: '#00bcd4',
+  600: '#00acc1',
+  700: '#0097a7',
+  800: '#00838f',
+  900: '#006064',
+  A100: '#84ffff',
+  A200: '#18ffff',
+  A400: '#00e5ff',
+  A700: '#00b8d4'
+};
+var _default = cyan;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/deepOrange.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/deepOrange.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var deepOrange = {
+  50: '#fbe9e7',
+  100: '#ffccbc',
+  200: '#ffab91',
+  300: '#ff8a65',
+  400: '#ff7043',
+  500: '#ff5722',
+  600: '#f4511e',
+  700: '#e64a19',
+  800: '#d84315',
+  900: '#bf360c',
+  A100: '#ff9e80',
+  A200: '#ff6e40',
+  A400: '#ff3d00',
+  A700: '#dd2c00'
+};
+var _default = deepOrange;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/deepPurple.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/deepPurple.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var deepPurple = {
+  50: '#ede7f6',
+  100: '#d1c4e9',
+  200: '#b39ddb',
+  300: '#9575cd',
+  400: '#7e57c2',
+  500: '#673ab7',
+  600: '#5e35b1',
+  700: '#512da8',
+  800: '#4527a0',
+  900: '#311b92',
+  A100: '#b388ff',
+  A200: '#7c4dff',
+  A400: '#651fff',
+  A700: '#6200ea'
+};
+var _default = deepPurple;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/green.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/green.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var green = {
+  50: '#e8f5e9',
+  100: '#c8e6c9',
+  200: '#a5d6a7',
+  300: '#81c784',
+  400: '#66bb6a',
+  500: '#4caf50',
+  600: '#43a047',
+  700: '#388e3c',
+  800: '#2e7d32',
+  900: '#1b5e20',
+  A100: '#b9f6ca',
+  A200: '#69f0ae',
+  A400: '#00e676',
+  A700: '#00c853'
+};
+var _default = green;
 exports.default = _default;
 
 /***/ }),
@@ -3679,6 +3963,184 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/colors/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/index.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "common", {
+  enumerable: true,
+  get: function get() {
+    return _common.default;
+  }
+});
+Object.defineProperty(exports, "red", {
+  enumerable: true,
+  get: function get() {
+    return _red.default;
+  }
+});
+Object.defineProperty(exports, "pink", {
+  enumerable: true,
+  get: function get() {
+    return _pink.default;
+  }
+});
+Object.defineProperty(exports, "purple", {
+  enumerable: true,
+  get: function get() {
+    return _purple.default;
+  }
+});
+Object.defineProperty(exports, "deepPurple", {
+  enumerable: true,
+  get: function get() {
+    return _deepPurple.default;
+  }
+});
+Object.defineProperty(exports, "indigo", {
+  enumerable: true,
+  get: function get() {
+    return _indigo.default;
+  }
+});
+Object.defineProperty(exports, "blue", {
+  enumerable: true,
+  get: function get() {
+    return _blue.default;
+  }
+});
+Object.defineProperty(exports, "lightBlue", {
+  enumerable: true,
+  get: function get() {
+    return _lightBlue.default;
+  }
+});
+Object.defineProperty(exports, "cyan", {
+  enumerable: true,
+  get: function get() {
+    return _cyan.default;
+  }
+});
+Object.defineProperty(exports, "teal", {
+  enumerable: true,
+  get: function get() {
+    return _teal.default;
+  }
+});
+Object.defineProperty(exports, "green", {
+  enumerable: true,
+  get: function get() {
+    return _green.default;
+  }
+});
+Object.defineProperty(exports, "lightGreen", {
+  enumerable: true,
+  get: function get() {
+    return _lightGreen.default;
+  }
+});
+Object.defineProperty(exports, "lime", {
+  enumerable: true,
+  get: function get() {
+    return _lime.default;
+  }
+});
+Object.defineProperty(exports, "yellow", {
+  enumerable: true,
+  get: function get() {
+    return _yellow.default;
+  }
+});
+Object.defineProperty(exports, "amber", {
+  enumerable: true,
+  get: function get() {
+    return _amber.default;
+  }
+});
+Object.defineProperty(exports, "orange", {
+  enumerable: true,
+  get: function get() {
+    return _orange.default;
+  }
+});
+Object.defineProperty(exports, "deepOrange", {
+  enumerable: true,
+  get: function get() {
+    return _deepOrange.default;
+  }
+});
+Object.defineProperty(exports, "brown", {
+  enumerable: true,
+  get: function get() {
+    return _brown.default;
+  }
+});
+Object.defineProperty(exports, "grey", {
+  enumerable: true,
+  get: function get() {
+    return _grey.default;
+  }
+});
+Object.defineProperty(exports, "blueGrey", {
+  enumerable: true,
+  get: function get() {
+    return _blueGrey.default;
+  }
+});
+
+var _common = _interopRequireDefault(__webpack_require__(/*! ./common */ "./node_modules/@material-ui/core/colors/common.js"));
+
+var _red = _interopRequireDefault(__webpack_require__(/*! ./red */ "./node_modules/@material-ui/core/colors/red.js"));
+
+var _pink = _interopRequireDefault(__webpack_require__(/*! ./pink */ "./node_modules/@material-ui/core/colors/pink.js"));
+
+var _purple = _interopRequireDefault(__webpack_require__(/*! ./purple */ "./node_modules/@material-ui/core/colors/purple.js"));
+
+var _deepPurple = _interopRequireDefault(__webpack_require__(/*! ./deepPurple */ "./node_modules/@material-ui/core/colors/deepPurple.js"));
+
+var _indigo = _interopRequireDefault(__webpack_require__(/*! ./indigo */ "./node_modules/@material-ui/core/colors/indigo.js"));
+
+var _blue = _interopRequireDefault(__webpack_require__(/*! ./blue */ "./node_modules/@material-ui/core/colors/blue.js"));
+
+var _lightBlue = _interopRequireDefault(__webpack_require__(/*! ./lightBlue */ "./node_modules/@material-ui/core/colors/lightBlue.js"));
+
+var _cyan = _interopRequireDefault(__webpack_require__(/*! ./cyan */ "./node_modules/@material-ui/core/colors/cyan.js"));
+
+var _teal = _interopRequireDefault(__webpack_require__(/*! ./teal */ "./node_modules/@material-ui/core/colors/teal.js"));
+
+var _green = _interopRequireDefault(__webpack_require__(/*! ./green */ "./node_modules/@material-ui/core/colors/green.js"));
+
+var _lightGreen = _interopRequireDefault(__webpack_require__(/*! ./lightGreen */ "./node_modules/@material-ui/core/colors/lightGreen.js"));
+
+var _lime = _interopRequireDefault(__webpack_require__(/*! ./lime */ "./node_modules/@material-ui/core/colors/lime.js"));
+
+var _yellow = _interopRequireDefault(__webpack_require__(/*! ./yellow */ "./node_modules/@material-ui/core/colors/yellow.js"));
+
+var _amber = _interopRequireDefault(__webpack_require__(/*! ./amber */ "./node_modules/@material-ui/core/colors/amber.js"));
+
+var _orange = _interopRequireDefault(__webpack_require__(/*! ./orange */ "./node_modules/@material-ui/core/colors/orange.js"));
+
+var _deepOrange = _interopRequireDefault(__webpack_require__(/*! ./deepOrange */ "./node_modules/@material-ui/core/colors/deepOrange.js"));
+
+var _brown = _interopRequireDefault(__webpack_require__(/*! ./brown */ "./node_modules/@material-ui/core/colors/brown.js"));
+
+var _grey = _interopRequireDefault(__webpack_require__(/*! ./grey */ "./node_modules/@material-ui/core/colors/grey.js"));
+
+var _blueGrey = _interopRequireDefault(__webpack_require__(/*! ./blueGrey */ "./node_modules/@material-ui/core/colors/blueGrey.js"));
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/colors/indigo.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@material-ui/core/colors/indigo.js ***!
@@ -3710,6 +4172,146 @@ var indigo = {
   A700: '#304ffe'
 };
 var _default = indigo;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/lightBlue.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/lightBlue.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var lightBlue = {
+  50: '#e1f5fe',
+  100: '#b3e5fc',
+  200: '#81d4fa',
+  300: '#4fc3f7',
+  400: '#29b6f6',
+  500: '#03a9f4',
+  600: '#039be5',
+  700: '#0288d1',
+  800: '#0277bd',
+  900: '#01579b',
+  A100: '#80d8ff',
+  A200: '#40c4ff',
+  A400: '#00b0ff',
+  A700: '#0091ea'
+};
+var _default = lightBlue;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/lightGreen.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/lightGreen.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var lightGreen = {
+  50: '#f1f8e9',
+  100: '#dcedc8',
+  200: '#c5e1a5',
+  300: '#aed581',
+  400: '#9ccc65',
+  500: '#8bc34a',
+  600: '#7cb342',
+  700: '#689f38',
+  800: '#558b2f',
+  900: '#33691e',
+  A100: '#ccff90',
+  A200: '#b2ff59',
+  A400: '#76ff03',
+  A700: '#64dd17'
+};
+var _default = lightGreen;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/lime.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/lime.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var lime = {
+  50: '#f9fbe7',
+  100: '#f0f4c3',
+  200: '#e6ee9c',
+  300: '#dce775',
+  400: '#d4e157',
+  500: '#cddc39',
+  600: '#c0ca33',
+  700: '#afb42b',
+  800: '#9e9d24',
+  900: '#827717',
+  A100: '#f4ff81',
+  A200: '#eeff41',
+  A400: '#c6ff00',
+  A700: '#aeea00'
+};
+var _default = lime;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/orange.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/orange.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var orange = {
+  50: '#fff3e0',
+  100: '#ffe0b2',
+  200: '#ffcc80',
+  300: '#ffb74d',
+  400: '#ffa726',
+  500: '#ff9800',
+  600: '#fb8c00',
+  700: '#f57c00',
+  800: '#ef6c00',
+  900: '#e65100',
+  A100: '#ffd180',
+  A200: '#ffab40',
+  A400: '#ff9100',
+  A700: '#ff6d00'
+};
+var _default = orange;
 exports.default = _default;
 
 /***/ }),
@@ -3749,6 +4351,41 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/core/colors/purple.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/purple.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var purple = {
+  50: '#f3e5f5',
+  100: '#e1bee7',
+  200: '#ce93d8',
+  300: '#ba68c8',
+  400: '#ab47bc',
+  500: '#9c27b0',
+  600: '#8e24aa',
+  700: '#7b1fa2',
+  800: '#6a1b9a',
+  900: '#4a148c',
+  A100: '#ea80fc',
+  A200: '#e040fb',
+  A400: '#d500f9',
+  A700: '#aa00ff'
+};
+var _default = purple;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/core/colors/red.js":
 /*!******************************************************!*\
   !*** ./node_modules/@material-ui/core/colors/red.js ***!
@@ -3780,6 +4417,76 @@ var red = {
   A700: '#d50000'
 };
 var _default = red;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/teal.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/teal.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var teal = {
+  50: '#e0f2f1',
+  100: '#b2dfdb',
+  200: '#80cbc4',
+  300: '#4db6ac',
+  400: '#26a69a',
+  500: '#009688',
+  600: '#00897b',
+  700: '#00796b',
+  800: '#00695c',
+  900: '#004d40',
+  A100: '#a7ffeb',
+  A200: '#64ffda',
+  A400: '#1de9b6',
+  A700: '#00bfa5'
+};
+var _default = teal;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/core/colors/yellow.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@material-ui/core/colors/yellow.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var yellow = {
+  50: '#fffde7',
+  100: '#fff9c4',
+  200: '#fff59d',
+  300: '#fff176',
+  400: '#ffee58',
+  500: '#ffeb3b',
+  600: '#fdd835',
+  700: '#fbc02d',
+  800: '#f9a825',
+  900: '#f57f17',
+  A100: '#ffff8d',
+  A200: '#ffff00',
+  A400: '#ffea00',
+  A700: '#ffd600'
+};
+var _default = yellow;
 exports.default = _default;
 
 /***/ }),
@@ -51077,7 +51784,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import Layout from '../components/MyLayout.js'
 
 
 
@@ -51100,7 +51806,7 @@ function (_Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(StatsPage).call(this, props));
     _this.state = {
       count: 0,
-      moment: undefined
+      time: undefined
     };
     _this.incrementCounter = _this.incrementCounter.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this));
     return _this;
@@ -51125,43 +51831,36 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("main", {
-        className: "jsx-3676144264"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Header_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_12___default.a, {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {
+        className: "jsx-450741822"
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Header_js__WEBPACK_IMPORTED_MODULE_9__["default"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
+        style: {
+          color: '#dbdbdb'
+        },
+        className: "jsx-450741822"
+      }, "Game Statistics"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_12___default.a, {
         variant: "title",
         color: "inherit"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
-        className: "jsx-3676144264"
-      }, "Game Statistics"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          justifyContent: 'left',
+          alignItems: 'center',
+          color: '#dbdbdb'
         },
-        className: "jsx-3676144264"
+        className: "jsx-450741822"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        className: "jsx-3676144264"
-      }, "Total questions: ", this.state.count)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         style: {
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          fontWeight: 'bold',
+          marginRight: '0.2em'
         },
-        className: "jsx-3676144264"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
-        className: "jsx-3676144264"
-      }, "Last question timestamp: ", moment(this.date).format()))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        id: "3676144264"
-      }, "h1.jsx-3676144264{font-family:\"Arial\";font-size:50px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYXRhc2hhc2hhZnFhdC9mdWxsc3RhY2svbWFnaWMvcGFnZXMvc3RhdGlzdGljcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4Q3NCLEFBR2tDLG9CQUNMLGVBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9uYXRhc2hhc2hhZnFhdC9mdWxsc3RhY2svbWFnaWMvcGFnZXMvc3RhdGlzdGljcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9NeUxheW91dC5qcydcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcG9uZW50cy9IZWFkZXIuanMnXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5pbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tIFwicmVhY3RcIjtcbmNvbnN0IG1vbWVudCA9IHJlcXVpcmUoJ21vbWVudCcpO1xuaW1wb3J0IHsgQ2hhcnQgfSBmcm9tIFwicmVhY3QtY2hhcnRzXCI7XG5pbXBvcnQgVHlwb2dyYXBoeSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9UeXBvZ3JhcGh5JztcblxuY2xhc3MgU3RhdHNQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcblxuICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgIHN1cGVyKHByb3BzKTtcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgY291bnQ6IDAsXG4gICAgICBtb21lbnQ6IHVuZGVmaW5lZFxuICAgIH07XG4gICAgdGhpcy5pbmNyZW1lbnRDb3VudGVyID0gdGhpcy5pbmNyZW1lbnRDb3VudGVyLmJpbmQodGhpcyk7XG4gIH1cblxuICBjb21wb25lbnREaWRNb3VudCgpIHtcbiAgICB0aGlzLnNldFN0YXRlKHtcbiAgICAgIGNvdW50OiBwYXJzZUludChsb2NhbFN0b3JhZ2UuZ2V0SXRlbShcImNvdW50XCIpKSB8fCAwXG4gICAgfSk7XG4gIH1cblxuICBpbmNyZW1lbnRDb3VudGVyKCkge1xuICAgIGNvbnN0IGNvdW50ID0gdGhpcy5zdGF0ZS5jb3VudCArIDE7XG4gICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oXCJjb3VudFwiLCBjb3VudCk7XG4gICAgdGhpcy5zZXRTdGF0ZSh7XG4gICAgICBjb3VudDogY291bnRcbiAgICB9KTtcbiAgfVxuXG4gIHJlbmRlcigpIHtcbiAgICByZXR1cm4gKFxuICAgICAgPG1haW4+XG4gICAgICAgIDxIZWFkZXIgLz5cbiAgICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD1cInRpdGxlXCIgY29sb3I9XCJpbmhlcml0XCI+XG4gICAgICAgICAgICA8aDE+R2FtZSBTdGF0aXN0aWNzPC9oMT5cbiAgICAgICAgICAgIDxkaXYgc3R5bGU9e3tkaXNwbGF5OiAnZmxleCcsICBqdXN0aWZ5Q29udGVudDonY2VudGVyJywgYWxpZ25JdGVtczonY2VudGVyJ319PlxuICAgICAgICAgICAgICA8cD5Ub3RhbCBxdWVzdGlvbnM6IHt0aGlzLnN0YXRlLmNvdW50fTwvcD5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBzdHlsZT17e2Rpc3BsYXk6ICdmbGV4JywgIGp1c3RpZnlDb250ZW50OidjZW50ZXInLCBhbGlnbkl0ZW1zOidjZW50ZXInfX0+XG4gICAgICAgICAgICAgIDxwPkxhc3QgcXVlc3Rpb24gdGltZXN0YW1wOiB7bW9tZW50KHRoaXMuZGF0ZSkuZm9ybWF0KCl9PC9wPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9UeXBvZ3JhcGh5PlxuICAgICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgICAgIGgxIHtcbiAgICAgICAgICAgICAgZm9udC1mYW1pbHk6XCJBcmlhbFwiO1xuICAgICAgICAgICAgICBmb250LXNpemU6NTBweDtcbiAgICAgICAgICAgIH1gfVxuICAgICAgICAgIDwvc3R5bGU+XG4gICAgICA8L21haW4+XG4gICAgKVxuICB9XG5cbiAgLypjb25zdCBTdGF0cyA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgICAgPHA+Q291bnQ6IHtwcm9wcy5jb3VudH08L3A+XG4gICAgPC9kaXY+XG4gICAgKTtcbiAgfTsqL1xuXG59XG5cbmV4cG9ydCBkZWZhdWx0IFN0YXRzUGFnZTtcbiJdfQ== */\n/*@ sourceURL=/Users/natashashafqat/fullstack/magic/pages/statistics.js */"));
+        className: "jsx-450741822"
+      }, "Total questions:"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        className: "jsx-450741822"
+      }, " ", this.state.count))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        id: "450741822"
+      }, "h1.jsx-450741822{font-family:\"Arial\";font-size:50px;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9uYXRhc2hhc2hhZnFhdC9mdWxsc3RhY2svbWFnaWMvcGFnZXMvc3RhdGlzdGljcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQ29CLEFBR2dDLG9CQUNMLGVBQ2hCIiwiZmlsZSI6Ii9Vc2Vycy9uYXRhc2hhc2hhZnFhdC9mdWxsc3RhY2svbWFnaWMvcGFnZXMvc3RhdGlzdGljcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcG9uZW50cy9IZWFkZXIuanMnXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5pbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tIFwicmVhY3RcIjtcbmNvbnN0IG1vbWVudCA9IHJlcXVpcmUoJ21vbWVudCcpO1xuaW1wb3J0IHsgQ2hhcnQgfSBmcm9tIFwicmVhY3QtY2hhcnRzXCI7XG5pbXBvcnQgVHlwb2dyYXBoeSBmcm9tICdAbWF0ZXJpYWwtdWkvY29yZS9UeXBvZ3JhcGh5JztcblxuY2xhc3MgU3RhdHNQYWdlIGV4dGVuZHMgQ29tcG9uZW50IHtcblxuICBjb25zdHJ1Y3Rvcihwcm9wcykge1xuICAgIHN1cGVyKHByb3BzKTtcbiAgICB0aGlzLnN0YXRlID0ge1xuICAgICAgY291bnQ6IDAsXG4gICAgICB0aW1lOiB1bmRlZmluZWRcbiAgICB9O1xuICAgIHRoaXMuaW5jcmVtZW50Q291bnRlciA9IHRoaXMuaW5jcmVtZW50Q291bnRlci5iaW5kKHRoaXMpO1xuICB9XG5cbiAgY29tcG9uZW50RGlkTW91bnQoKSB7XG4gICAgdGhpcy5zZXRTdGF0ZSh7XG4gICAgICBjb3VudDogcGFyc2VJbnQobG9jYWxTdG9yYWdlLmdldEl0ZW0oXCJjb3VudFwiKSkgfHwgMFxuICAgIH0pO1xuICB9XG5cbiAgaW5jcmVtZW50Q291bnRlcigpIHtcbiAgICBjb25zdCBjb3VudCA9IHRoaXMuc3RhdGUuY291bnQgKyAxO1xuICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKFwiY291bnRcIiwgY291bnQpO1xuICAgIHRoaXMuc2V0U3RhdGUoe1xuICAgICAgY291bnQ6IGNvdW50XG4gICAgfSk7XG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxib2R5PlxuICAgICAgICA8SGVhZGVyIC8+XG4gICAgICAgICAgPGgxIHN0eWxlPXt7Y29sb3I6JyNkYmRiZGInfX0+R2FtZSBTdGF0aXN0aWNzPC9oMT5cbiAgICAgICAgICAgIDxUeXBvZ3JhcGh5IHZhcmlhbnQ9XCJ0aXRsZVwiIGNvbG9yPVwiaW5oZXJpdFwiPlxuICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3tkaXNwbGF5OiAnZmxleCcsICBqdXN0aWZ5Q29udGVudDonbGVmdCcsIGFsaWduSXRlbXM6J2NlbnRlcicsIGNvbG9yOicjZGJkYmRiJ319PlxuICAgICAgICAgICAgICAgICAgPHAgc3R5bGU9e3tmb250V2VpZ2h0Oidib2xkJywgbWFyZ2luUmlnaHQ6JzAuMmVtJ319PlRvdGFsIHF1ZXN0aW9uczo8L3A+XG4gICAgICAgICAgICAgICAgICA8cD4geyB0aGlzLnN0YXRlLmNvdW50IH08L3A+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDwvVHlwb2dyYXBoeT5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICAgIGgxIHtcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OlwiQXJpYWxcIjtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTo1MHB4O1xuICAgICAgICAgIH1gfVxuICAgICAgICA8L3N0eWxlPlxuICAgICAgPC9ib2R5PlxuICAgIClcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBTdGF0c1BhZ2U7XG4iXX0= */\n/*@ sourceURL=/Users/natashashafqat/fullstack/magic/pages/statistics.js */"));
     }
-    /*const Stats = props => {
-    return (
-      <div>
-        <p>Count: {props.count}</p>
-      </div>
-      );
-    };*/
-
   }]);
 
   return StatsPage;
@@ -51171,7 +51870,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstatistics&absolutePagePath=%2FUsers%2Fnatashashafqat%2Ffullstack%2Fmagic%2Fpages%2Fstatistics.js ***!
   \************************************************************************************************************************************************/
@@ -51194,5 +51893,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=statistics.js.map

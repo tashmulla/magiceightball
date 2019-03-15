@@ -1,4 +1,3 @@
-// import Layout from '../components/MyLayout.js'
 import Header from '../components/Header.js'
 import Link from 'next/link'
 import { Component } from "react";
@@ -12,7 +11,7 @@ class StatsPage extends Component {
     super(props);
     this.state = {
       count: 0,
-      moment: undefined
+      time: undefined
     };
     this.incrementCounter = this.incrementCounter.bind(this);
   }
@@ -33,35 +32,24 @@ class StatsPage extends Component {
 
   render() {
     return (
-      <main>
+      <body>
         <Header />
-        <Typography variant="title" color="inherit">
-            <h1>Game Statistics</h1>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-              <p>Total questions: {this.state.count}</p>
-            </div>
-            <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-              <p>Last question timestamp: {moment(this.date).format()}</p>
-            </div>
-          </Typography>
-          <style jsx>{`
-            h1 {
-              font-family:"Arial";
-              font-size:50px;
-            }`}
-          </style>
-      </main>
+          <h1 style={{color:'#dbdbdb'}}>Game Statistics</h1>
+            <Typography variant="title" color="inherit">
+                <div style={{display: 'flex',  justifyContent:'left', alignItems:'center', color:'#dbdbdb'}}>
+                  <p style={{fontWeight:'bold', marginRight:'0.2em'}}>Total questions:</p>
+                  <p> { this.state.count }</p>
+                </div>
+              </Typography>
+        <style jsx>{`
+          h1 {
+            font-family:"Arial";
+            font-size:50px;
+          }`}
+        </style>
+      </body>
     )
   }
-
-  /*const Stats = props => {
-  return (
-    <div>
-      <p>Count: {props.count}</p>
-    </div>
-    );
-  };*/
-
 }
 
 export default StatsPage;
