@@ -7,6 +7,8 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Circle } from 'react-shapes';
+const moment = require('moment');
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 class App extends Component {
 
@@ -34,46 +36,57 @@ class App extends Component {
     });
   }
 
+  getTimeStamp = () => {
+    var now = new Date();
+    return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + now.getFullYear() + " " + now.getHours() + ':'
+  + ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
+  }
+
+
   handleSubmit = (event) => {
     event.preventDefault();
     fetch('/', { method: 'POST' })
     .then(response => response.text())
-    .then(textValue => this.setState({ response: textValue }));
+    .then(textValue => this.setState({ response: textValue }))
+    .then(console.log(moment().toDate()));
   }
 
   render() {
     return (
         <main>
-          <Header />
-            <div style={{paddingTop: "150px"}}>
-              <Typography variant="title" color="inherit">
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                  <h1 style={{ fontFamily:"Arial", fontSize:"50px" }}>Magic 8 Ball</h1>
-                </div>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                  <form className="question-input" onSubmit={this.handleSubmit}>
-                    <TextField
-                      id="inputquestion"
-                      autoComplete="off"
-                      placeholder="Ask your question..."
-                      margin="normal"
-                      style={{ width:"200px", paddingRight:"10px" }}
-                    />
-                    <Button
-                      variant="contained"
-                      type="submit"
-                      color="primary"
-                      onClick={ this.incrementCounter.bind(this) }
-                      id="submitquestion"
-                      style={{ width: "100px", fontSize:17 }}>Shake Me!
-                    </Button>
-                  </form>
-                </div>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
-                  <p>Magic 8 Ball says... {this.state.response}</p>
-                </div>
-              </Typography>
-            </div>
+            <Header />
+              <div style={{paddingTop: "150px"}}>
+                <Typography variant="title" color="inherit">
+                  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <h1 style={{ fontFamily:"Arial", fontSize:"50px" }}>Magic 8 Ball</h1>
+                  </div>
+                  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <form className="question-input" onSubmit={this.handleSubmit}>
+                      <TextField
+                        id="inputquestion"
+                        autoComplete="off"
+                        placeholder="Ask your question..."
+                        margin="normal"
+                        style={{ width:"200px", paddingRight:"10px" }}
+                      />
+                      <Button
+                        variant="contained"
+                        type="submit"
+                        color="primary"
+                        onClick={ this.incrementCounter.bind(this) }
+                        id="submitquestion"
+                        style={{ width: "100px", fontSize:17 }}>Shake Me!
+                      </Button>
+                    </form>
+                  </div>
+                  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <p>Magic 8 Ball says...</p>
+                  </div>
+                  <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <p>{this.state.response}</p>
+                  </div>
+                </Typography>
+              </div>
         </main>
     )
   }

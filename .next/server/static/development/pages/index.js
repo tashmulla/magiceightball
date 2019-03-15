@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1419,6 +1419,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var react_shapes__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-shapes */ "react-shapes");
 /* harmony import */ var react_shapes__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_shapes__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/LinearProgress */ "@material-ui/core/LinearProgress");
+/* harmony import */ var _material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_16__);
 
 
 
@@ -1437,6 +1439,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var moment = __webpack_require__(/*! moment */ "moment");
+
+
+
 var App =
 /*#__PURE__*/
 function (_Component) {
@@ -1449,6 +1455,11 @@ function (_Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(App).call(this, props));
 
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "getTimeStamp", function () {
+      var now = new Date();
+      return now.getMonth() + 1 + '/' + now.getDate() + '/' + now.getFullYear() + " " + now.getHours() + ':' + (now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes()) + ':' + (now.getSeconds() < 10 ? "0" + now.getSeconds() : now.getSeconds());
+    });
+
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleSubmit", function (event) {
       event.preventDefault();
       fetch('/', {
@@ -1459,7 +1470,7 @@ function (_Component) {
         return _this.setState({
           response: textValue
         });
-      });
+      }).then(console.log(moment().toDate()));
     });
 
     _this.state = {
@@ -1542,7 +1553,13 @@ function (_Component) {
           justifyContent: 'center',
           alignItems: 'center'
         }
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", null, "Magic 8 Ball says... ", this.state.response)))));
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", null, "Magic 8 Ball says...")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
+        style: {
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("p", null, this.state.response)))));
     }
   }]);
 
@@ -1574,7 +1591,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -1605,6 +1622,17 @@ module.exports = require("@material-ui/core/AppBar");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Button");
+
+/***/ }),
+
+/***/ "@material-ui/core/LinearProgress":
+/*!***************************************************!*\
+  !*** external "@material-ui/core/LinearProgress" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/LinearProgress");
 
 /***/ }),
 
@@ -1759,6 +1787,17 @@ module.exports = require("core-js/library/fn/symbol");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
 
 /***/ }),
 
