@@ -23311,7 +23311,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fstatistics&absolutePagePath=%2FUsers%2Fnatashashafqat%2Ffullstack%2Fmagic%2Fpages%2Fstatistics.js ***!
   \************************************************************************************************************************************************/
@@ -23334,5 +23334,5 @@ module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=statistics.js.map

@@ -1,16 +1,16 @@
 {
   "name": "magic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Magic Eight Ball Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "ode server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "natashashafqat",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -38,8 +38,7 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
-  "devDependencies": {
-    "css-loader": "^2.1.1",
-    "style-loader": "^0.23.1"
+  "engines": {
+    "node": "10.15.3"
   }
 }
