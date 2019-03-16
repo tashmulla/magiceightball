@@ -51,7 +51,7 @@ class App extends Component {
       <body style={{backgroundColor:"#191b1e"}}>
         <Header />
           <div
-          style={{marginTop:"100px", display:"flex", marginLeft:"370px", justifyContent:"center", alignItems:"center"}}
+          style={{marginTop:"100px", display:"flex", marginLeft:"auto", marginRight:"auto", justifyContent:"center", alignItems:"center"}}
           id="circle">
             <Typography
             variant="title"
