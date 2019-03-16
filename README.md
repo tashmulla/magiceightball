@@ -1,2 +1,1 @@
-# magiceightball
-Magic 8 Ball web application.
+# Magic Eight Ball Application
