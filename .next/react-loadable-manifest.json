@@ -723,6 +723,12 @@
       "name": "./node_modules/@material-ui/utils/node_modules/@babel/runtime/helpers/typeof.js",
       "file": "static/chunks/commons.8396034b6ef232389b6e.js",
       "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
+    },
+    {
+      "id": "exj9",
+      "name": "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/typeof.js",
+      "file": "static/chunks/commons.8396034b6ef232389b6e.js",
+      "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
     }
   ],
   "../../modules/es6.object.set-prototype-of": [
@@ -1847,20 +1853,6 @@
       "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
     }
   ],
-  "../helpers/typeof": [
-    {
-      "id": "exj9",
-      "name": "./node_modules/@material-ui/core/node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/commons.8396034b6ef232389b6e.js",
-      "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
-    },
-    {
-      "id": "iZP3",
-      "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
-      "file": "static/chunks/commons.8396034b6ef232389b6e.js",
-      "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
-    }
-  ],
   "./SheetsRegistry": [
     {
       "id": "f2ih",
@@ -1961,6 +1953,14 @@
     {
       "id": "i8i4",
       "name": "./node_modules/react-dom/index.js",
+      "file": "static/chunks/commons.8396034b6ef232389b6e.js",
+      "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
+    }
+  ],
+  "../helpers/typeof": [
+    {
+      "id": "iZP3",
+      "name": "./node_modules/@babel/runtime-corejs2/helpers/typeof.js",
       "file": "static/chunks/commons.8396034b6ef232389b6e.js",
       "publicPath": "static/chunks/commons.8396034b6ef232389b6e.js"
     }
