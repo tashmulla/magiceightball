@@ -20,12 +20,12 @@ The server routing was done using the [express](https://expressjs.com/) package.
 
 ## Running the application
 
-The application is easily accessible and hosted on Heroku at: https://natashashafqatmagic.herokuapp.com.
+The application is easily accessible and hosted on [Heroku](https://www.heroku.com/) at: https://natashashafqatmagic.herokuapp.com.
 
 However, if you would like to build the application yourself, ensure you have node and npm installed and run the following:
 
-`npm install` to install the application dependencies
-`npm start` to start the application on localhost
+- `npm install` to install the application dependencies
+- `npm start` to start the application on localhost
 
 ## Authors
 
