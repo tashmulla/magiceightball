@@ -1,4 +1,4 @@
-import Header from "../components/Header.js"
+import Header from "../layouts/Header.js"
 import React, { Component } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";

@@ -1,5 +1,4 @@
-import Header from "../components/Header.js";
-import Link from "next/link";
+import Header from "../layouts/Header.js";
 import { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 
@@ -35,7 +34,7 @@ class StatsPage extends Component {
             <Typography variant="title" color="inherit">
                 <div style={{display: "flex",  justifyContent:"left", alignItems:"center", color:"#dbdbdb"}}>
                   <p style={{fontWeight:"bold", marginRight:"0.2em"}}>Total questions:</p>
-                  <p> { this.state.count }</p>
+                  <p>{ this.state.count }</p>
                 </div>
               </Typography>
         <style jsx>{`
