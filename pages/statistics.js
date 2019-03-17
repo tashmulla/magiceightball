@@ -12,13 +12,14 @@ class StatsPage extends Component {
     this.incrementCounter = this.incrementCounter.bind(this);
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     this.setState({
       count: parseInt(localStorage.getItem("count")) || 0
     });
   }
 
-  incrementCounter() {
+  /* Increase the question count */
+  incrementCounter = () => {
     const count = this.state.count + 1;
     localStorage.setItem("count", count);
     this.setState({

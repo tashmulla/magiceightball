@@ -10,8 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      response: undefined,
-      showProgress: false
+      response: undefined
     };
     this.incrementCounter = this.incrementCounter.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,6 +22,7 @@ class App extends Component {
     });
   }
 
+  /* Increase the question count */
   incrementCounter = () => {
     const count = this.state.count + 1;
     localStorage.setItem("count", count);
@@ -31,6 +31,7 @@ class App extends Component {
     });
   }
 
+  /* Handles the form submit event */
   handleSubmit = (event) => {
     event.preventDefault();
     const x = inputquestion.value;
@@ -41,7 +42,6 @@ class App extends Component {
       fetch("/", { method: "POST" })
       .then(response => response.text())
       .then(textValue => this.setState({ response: textValue }))
-      .then(this.setState({showProgress : false }))
       .then(this.setState({showAnswer : true}));
     }
   }
@@ -91,9 +91,6 @@ class App extends Component {
                     Shake Me!
                   </Button>
                 </form>
-              </div>
-              <div>
-                { this.state.showProgress ? <CircularProgress color="primary" /> : null }
               </div>
               <div style={{display:"flex", justifyContent:"center", alignItems:"center", color:"white", fontWeight:"bold"}}>
                 {this.state.showAnswer ? <p>{this.state.response}</p> : null }
