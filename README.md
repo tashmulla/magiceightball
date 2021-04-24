@@ -2,7 +2,7 @@
 
 Welcome to my Magic 8 Ball web application. Ask the Magic 8 Ball any question and receive your mystic answer!
 
-![alt text]("./eightball-preview.png" "Preview")
+![alt text](./eightball-preview.png "Preview")
 ## Application features
 
 The application has two pages:
